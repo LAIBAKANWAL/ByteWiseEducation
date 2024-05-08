@@ -1,0 +1,89 @@
+.benefits {
+    margin: 100px auto;
+    display: flex; 
+     align-items: center;
+    justify-content: center; 
+    width: 100%;
+    background: #ebf5db;
+    padding-bottom: 10px;
+  }
+  .main-left {
+    flex-basis: 56%;
+    padding: 30px;
+  }
+  .main-right {
+    flex-basis: 40%;
+  }
+  .main-right img{
+    width: 60%;
+  }
+  .main-left h3 {
+    font-weight: 600;
+    font-size: 19px;
+ color: #524f4f;
+        margin: 20px 0 0 15%;
+  }
+  .main-left h2 {
+    font-size: 30px;
+    color: #000f38;
+    margin: 20px 0 30px 20px;
+  }
+  .main-left p{
+      color: #656565;
+      margin: 10px 0 0 15%;
+  }
+  .point{
+    position: relative;
+  }
+  .point img{
+    position: absolute;
+  top: 5px; 
+  left: 10px; 
+  width: 55px;
+  margin-left: 10px;
+  }
+  .cap {
+    position: absolute; 
+  }
+  
+  .cap-icon {
+    position: absolute; 
+    width: 90px; /* Adjust width as needed */
+    height: 90px; /* Adjust height as needed */
+    text-align: center; /* Center text within icons */
+  }
+  .cap-icon img {
+    width: 100%; /* Scale image to fit icon size */
+    height: 100%;
+  }
+  
+  .cap-icon:nth-child(1) {
+    top: -35px;
+    left: 430px;
+    transform: rotate(120deg);
+  }
+  .cap-icon:nth-child(2) {
+    top: -300px;
+    left: 430px;
+    
+    transform: rotate(75deg);
+  }
+
+  /* .........media query............. */
+
+@media (max-width: 800px){
+  .benefits{
+    flex-direction: column;
+  }
+  .main-left{
+    flex-basis: 100%;
+    margin: 20px;
+    /* order: 1; */
+  }
+  .main-right{
+    flex-basis: 100%;
+  }
+  .main-right img{
+    width: 80%;
+  }
+  }
