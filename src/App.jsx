@@ -1,39 +1,22 @@
-import React from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import Hero from "./Components/Hero/Hero";
-import Courses from "./Components/Courses/Courses";
-import Title from "./Components/Title/Title";
-import About from "./Components/About/About";
-import Benefits from "./Components/Benefits/Benefits";
-import Solution from "./Components/Solution/Solution";
-import Testimonials from "./Components/Testimonials/Testimonials";
-import Contact from "./Components/Contact/Contact";
-import Footer from "./Components/Footer/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Login from "./pages/Login/Login";
+import Registration from "./pages/Registration/Registration";
+import { ToastContainer } from "react-toastify";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 const App = () => {
   return (
-   <>
-      <Navbar />
-      <Hero />
-
-      <div className="container">
-        <Title title="Trending Cource" size='25px'/>
-        <Courses />
-        <About />
-      
-        <Title title="Not sure where to begin? What is your main goal on ByteWiseEducation?" size='20px'/>
-        <Solution />
-      </div>
-      <Benefits />
-      <div className="container">
-        <Title title="What Learner Says" size='25px'/>
-      <Testimonials />
-
-      <Title title="Get in Touch" size='25px'/>
-      <Contact />
-      <Footer />
-      </div>
-      </>
+    <>
+      <ToastContainer></ToastContainer>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/register" element={<Registration />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 };
 

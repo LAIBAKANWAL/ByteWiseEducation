@@ -14,15 +14,15 @@ const Navbar = () => {
     });
   }, []);
 
-  const [mobileMenu,setMobileMenu] = useState(false);
-  const toggleMenu = () =>{
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const toggleMenu = () => {
     mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
-  }
+  };
 
   return (
     <nav className={`container ${sticky ? "dark-nav" : ""}`}>
       <img src={logo} alt="ByteWiseEducation Logo" className="logo" />
-      <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
+      <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
           <Link to="hero" smooth={true} duration={500} offset={0}>
             Home
@@ -54,18 +54,21 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-        <Link
-        to="contact"
-        smooth={true}
-        duration={500}
-        offset={-260}
-        className="btn"
-      >
-        Contact us
-      </Link>
+          <Link to="contact" smooth={true} duration={500} offset={-260}>
+            Contact us
+          </Link>
+        </li>
+        <li>
+          <Link to="contact" smooth={true} duration={500} offset={-260}>
+            Sign Up
+          </Link>
         </li>
       </ul>
-     <img src={mobileMenu ? close_icon : menu_icon}  className="menu-icon" onClick={toggleMenu}/>
+      <img
+        src={mobileMenu ? close_icon : menu_icon}
+        className="menu-icon"
+        onClick={toggleMenu}
+      />
     </nav>
   );
 };

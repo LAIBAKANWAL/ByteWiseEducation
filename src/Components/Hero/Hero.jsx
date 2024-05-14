@@ -45,8 +45,10 @@ const Hero = () => {
         <p className="hero-paragraph">
         Our cutting-edge curriculum is designed to empower students with the knowledge, skills and experiences needed to excel in the dynamic field of technology.
         </p>
+        <div className="heroBtn">
         <button className="btn">Explore Course</button>
         <button className="blank-btn">Join Community</button>
+        </div>
       </div>
     </div>
   );

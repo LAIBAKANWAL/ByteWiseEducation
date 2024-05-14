@@ -27,6 +27,7 @@ a{
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  width: 100%;
 }
 .btn:hover {
 background-image: linear-gradient(to right, #5072ED 0%, #DF7C05 100%);
@@ -40,6 +41,7 @@ background-image: linear-gradient(to right, #5072ED 0%, #DF7C05 100%);
     font-size: 16px;
     border: 1px solid black;
     margin-left: 15px;
+    width: 100%;
 }
 .blank-btn:hover{
     background: #f3f3f3;

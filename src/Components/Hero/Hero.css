@@ -109,7 +109,12 @@ margin-top: 5px;
   padding: 0 10px;
   }
   
-  
+  .heroBtn{
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+  }
+
 /* .........media query............. */
 
 @media (max-width: 1071px) {
